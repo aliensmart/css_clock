@@ -1,0 +1,267 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background:  #232425;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#watch{
+    font-size: 1rem;
+    position: relative;
+    width: 30rem;
+    height:30rem;
+    margin: 2rem auto;
+    border-radius: 50%;
+    background: white;
+}
+
+
+#watch:after{
+    content:'';
+    width:28rem;
+    height:28rem;
+    border-radius:50%;
+    position:absolute;
+    top:.9rem; 
+    left:.9rem;
+    box-shadow:inset .2rem .2rem 1rem rgba(0,0,0,.2) ;
+    border:.1em solid rgba(0,0,0,.2);
+    /* background:-webkit-linear-gradient(top, #fff, #ccc);
+    background:-moz-linear-gradient(top, #fff, #ccc);
+    background:linear-gradient(to bottom, #fff, #ccc); */
+}
+
+#watch .minute-marks li {
+    
+    display:block;
+    width:.2rem;
+    height:.6rem;
+    background:#929394;
+    position:absolute;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:-.4rem 0 0 -.2rem;
+  }
+#watch .minute-marks li:first-child {transform:rotate(6deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(2) {transform:rotate(12deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(3) {transform:rotate(18deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(4) {transform:rotate(24deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(5) {transform:rotate(36deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(6) {transform:rotate(42deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(7) {transform:rotate(48deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(8) {transform:rotate(54deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(9) {transform:rotate(66deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(10) {transform:rotate(72deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(11) {transform:rotate(78deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(12) {transform:rotate(84deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(13) {transform:rotate(96deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(14) {transform:rotate(102deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(15) {transform:rotate(108deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(16) {transform:rotate(114deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(17) {transform:rotate(126deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(18) {transform:rotate(132deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(19) {transform:rotate(138deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(20) {transform:rotate(144deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(21) {transform:rotate(156deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(22) {transform:rotate(162deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(23) {transform:rotate(168deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(24) {transform:rotate(174deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(25) {transform:rotate(186deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(26) {transform:rotate(192deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(27) {transform:rotate(198deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(28) {transform:rotate(204deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(29) {transform:rotate(216deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(30) {transform:rotate(222deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(31) {transform:rotate(228deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(32) {transform:rotate(234deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(33) {transform:rotate(246deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(34) {transform:rotate(252deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(35) {transform:rotate(258deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(36) {transform:rotate(264deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(37) {transform:rotate(276deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(38) {transform:rotate(282deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(39) {transform:rotate(288deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(40) {transform:rotate(294deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(41) {transform:rotate(306deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(42) {transform:rotate(312deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(43) {transform:rotate(318deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(44) {transform:rotate(324deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(45) {transform:rotate(336deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(46) {transform:rotate(342deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(47) {transform:rotate(348deg) translateY(-12.7rem)}
+#watch .minute-marks li:nth-child(48) {transform:rotate(354deg) translateY(-12.7rem)}
+
+#watch .digits {
+    width:30rem;
+    height:30rem;
+    border-radius:15rem;
+    position:absolute;
+    top:0; 
+    left:50%;
+    margin-left:-15rem;
+  }
+  #watch .digits li {
+    font-size:1.6rem;
+    display:block;
+    width:1.6rem;
+    height:1.6rem;
+    position:absolute;
+    top:50%; 
+    left:50%;
+    line-height:1.6rem;
+    text-align:center;
+    /* transform: translate(-50%, -50%); */
+    font-weight:bold;
+    margin:-.8rem 0 0 -.8rem;
+    
+  }
+
+#watch .digits li:nth-child(1) { transform:translate(6.2rem, -11.2rem) }
+#watch .digits li:nth-child(2) { transform:translate(11rem, -6.5rem) }
+#watch .digits li:nth-child(3) { transform:translate(12.5rem, 0) }
+#watch .digits li:nth-child(4) { transform:translate(11rem, 6.5rem) }
+#watch .digits li:nth-child(5) { transform:translate(6.5rem, 11rem) }
+#watch .digits li:nth-child(6) { transform:translate(0, 13rem) }
+#watch .digits li:nth-child(7) { transform:translate(-6.5rem, 11.2rem) }
+#watch .digits li:nth-child(8) { transform:translate(-11rem, 6.5rem) }
+#watch .digits li:nth-child(9) { transform:translate(-12.5rem, 0) }
+#watch .digits li:nth-child(10) { transform:translate(-11rem, -6.5rem) }
+#watch .digits li:nth-child(11) { transform:translate(-6.5rem, -11rem) }
+#watch .digits li:nth-child(12) { transform:translate(0, -13rem) }
+
+#watch .digits:before {
+    content:'';
+    width:1.6rem;
+    height:1.6rem;
+    border-radius:.8rem;
+    position:absolute;
+    top:50%; 
+    left:50%;
+    margin:-.8rem 0 0 -.8rem;
+    background:#121314;
+  }
+
+  #watch .digits:after {
+    content:'';
+    width:4rem;
+    height:4rem;
+    border-radius:2.2rem;
+    position:absolute;
+    top:50%; 
+    left:50%;
+    margin:-2.1rem 0 0 -2.1rem;
+    border:.1rem solid #c6c6c6;
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+    background:-moz-radial-gradient(center, ellipse cover, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+    background:radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+  }
+
+  #watch .hours-hand {
+    width:.8rem;
+    height:7rem;
+    border-radius:0 0 .9rem .9rem;
+    background:#232425;
+    position:absolute;
+    bottom:50%; 
+    left:50%;
+    margin:0 0 -.8rem -.4rem;
+    box-shadow:#232425 0 0 2px;
+    transform-origin:0.4rem 6.2rem;
+
+  }
+  .hand{
+    --rotation:0;
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: rotate(calc(var(--rotation)* 1deg)) ;
+}
+
+  #watch .hours-hand:before {
+    content:'';
+    background:inherit;
+    width:1.8rem;
+    height:.8rem;
+    border-radius:0 0 .8rem .8rem;
+    box-shadow:#232425 0 0 1px;
+    position:absolute;
+    top:-.7rem; left:-.5rem;
+  }
+
+  #watch .hours-hand:after {
+    content:'';
+    width:0; height:0;
+    border:.9rem solid #232425;
+    border-width:0 .9rem 2.4rem .9rem;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    position:absolute;
+    top:-3.1rem; left:-.5rem;
+  }
+
+  #watch .minutes-hand {
+    width:.8em;
+    height:12.5em;
+    border-radius:.5em;
+    background:#343536;
+    position:absolute;
+    bottom:50%; left:50%;
+    margin:0 0 -1.5em -.4em;
+    box-shadow:#343536 0 0 2px;
+    transform-origin:0.4em 11em;
+  }
+
+  #watch .seconds-hand {
+    width:.2em;
+    height:14em;
+    border-radius:.1em .1em 0 0/10em 10em 0 0;
+    background:#c00;
+    position:absolute;
+    bottom:50%; left:50%;
+    margin:0 0 -2em -.1em;
+    box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+    transform-origin:0.1em 12em;
+  }
+
+  #watch .seconds-hand:after {
+    content:'';
+    width:1.4em;
+    height:1.4em;
+    border-radius:.7em;
+    background:inherit;
+    position:absolute;
+    left:-.65em; bottom:1.35em;
+  }
+  #watch .seconds-hand:before {
+    content:'';
+    width:.8em;
+    height:3em;
+    border-radius:.2em .2em .4em .4em/.2em .2em 2em 2em;
+    box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+    background:inherit;
+    position:absolute;
+    left:-.35em; bottom:-3em;
+  }
+  #watch .digital-wrap {
+    width:9em;
+    height:3em;
+    border:.1em solid #222;
+    border-radius:.2em;
+    position:absolute;
+    top:50%; left:50%;
+    margin:3em 0 0 -4.5em;
+    overflow:hidden;
+    background:#4c4c4c;
+    background:-webkit-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
+    background:-moz-linear-gradient(top, #4c4c4c 0%, #0f0f0f 100%);
+    background:-ms-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
+    background:-o-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
+    background:linear-gradient(to bottom, #4c4c4c 0%,#0f0f0f 100%);
+  }
