@@ -1,8 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html{
     font-size: 62.5%;
 }
 body{
+    height: 100vh;
     background:  #232425;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C22D5E;
+    background: -webkit-linear-gradient(top left, #C22D5E, #E52847);
+    background: -moz-linear-gradient(top left, #C22D5E, #E52847);
+    background: linear-gradient(to bottom right, #C22D5E, #E52847);
+    
 }
 ul{
     list-style: none;
